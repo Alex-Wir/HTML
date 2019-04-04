@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text</title>
+	<style>
+		body{margin: 0 15%;}
+	</style>
+<head>
+<body>
+	<h2>placeholder</h2>
+	<form>
+		<p>
+			<input type="text" name="userName" placeholder="Введите имя" size="18"/>
+		</p>
+		<p>
+			<input type="text" name="userPhone" placeholder="Введите телефон" size="18" maxlength="11" />
+		</p>
+		<p>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</p>
+	</form>
+	<hr />
+	<h2>value="Tom"</h2>
+	<form>
+		<p>
+			<input type="text" name="userName" value="Tom" placeholder="Введите имя" />
+		</p>
+		<p>
+			<input type="text" name="userPhone" placeholder="Введите телефон" />
+		</p>
+		<p>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</p>
+	</form>
+	<hr />
+	<h2>readonly, disabled</h2>
+	<form>
+		<p>
+			<input type="text" name="userName" value="Tom" placeholder="Введите имя" readonly />
+		</p>
+		<p>
+			<input type="text" name="userPhone" value="+123456789123" disabled />
+		</p>
+		<p>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</p>
+	</form>
+	<hr />
+	<h2>datalist <font color="red">не работает</font></h2>
+	<form>
+		<input list="1984" type="text" name="freedomlist" placeholder="введите лозунг" />
+		<button type="submit">Submit</button>
+	</form>
+	<datalist id="1984">
+		<option value="война" label="19.84" />
+		<option value="свобода">84.19</option>
+		<option value="незнание" />
+	</datalist>
+</body>
+</html>

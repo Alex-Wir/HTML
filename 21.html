@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Select</title>
+	<style>
+		body{margin: 0 15%;}
+	</style>
+<head>
+<body>
+	<h2>Select</h2>
+	<form>
+		<label for="phone2">Select model:</label>
+		<select name="phone1" id="phone1">
+			<option value="iphone">iPhone 6S</option>
+			<option value="galaxy">Galaxy S7</option>
+			<option value="lumia">Lumia 950</option>
+		</select>
+		<p><button type="submit">Submit</button></p>
+	</form>
+	<hr />
+	<h2>Selected - default value</h2>
+	<form>
+		<label for="phone2">Select model:</label>
+		<select name="phone2" id="phone2">
+			<option value="iphone">iPhone 6S</option>
+			<option value="galaxy" selected>Galaxy S7</option>
+			<option value="lumia">Lumia 950</option>
+		</select>
+		<p><button type="submit">Submit</button></p>
+	</form>
+	<hr />
+	<h2>Selected disabled</h2>
+	<form>
+		<select name="phone3" id="phone3">
+			<option selected disabled>Select model</option>
+			<option value="iphone">iPhone 6S</option>
+			<option value="galaxy">Galaxy S7</option>
+			<option value="lumia">Lumia 950</option>
+		</select>
+		<p><button type="submit">Submit</button></p>
+	</form>
+	<hr />
+	<h2>Multiple - use Ctrl or Shift</h2>
+	<form>
+		<label for="phone4">Select phone:</label>
+		<select multiple name="phone4" id="phone4">
+			<option value="nexus">Nexus 5X</option>
+			<option value="iphone">iPhone 6S</option>
+			<option value="galaxy">Galaxy S7</option>
+			<option value="lumia">Lumia 950</option>
+		</select>
+		<p><button type="submit">Submit</button></p>
+	</form>
+	<hr />
+	<h2>Optgroup</h2>
+	<form>
+		<label for="phone5">Select model:</label>
+		<select name="phone5" id="phone5">
+			<optgroup label="Apple">
+				<option value="iphone6s">iPhone 6S</option>
+				<option value="iphone6sp">iPhone 6S+</option>
+				<option value="iphone7m">iPhone 7-</option>
+			</optgroup>
+			<optgroup label="Google">
+				<option value="nexus5x">Nexus 5X</option>
+				<option value="nexus555x">Nexus 555X</option>
+			</optgroup>
+			<option value="galaxy">Galaxy S7</option>
+			<option value="lumia">Lumia 950</option>
+		</select>
+		<p><button type="submit">Submit</button></p>
+	</form>
+</body>
+</html>
+		
