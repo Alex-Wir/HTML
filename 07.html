@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Таблицы</title>
+<style>
+body{
+margin: 0 15%;
+}
+table, td, th, caption{
+border: solid 1px silver;
+}
+table#empty td{
+height:60px;
+width:60px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+	<a href="08.html">К оглавлению</a>
+	<table>
+		<caption><strong>Таблица Большого брата</strong></caption>
+	<thead>
+		<tr>
+			<th>Война</th>
+			<th>Свобода</th>
+			<th>Незнание</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Это прекрасно</td>
+			<td>уничтожать слова</td>
+			<td>Главный мусор</td>
+		</tr>
+		<tr>
+			<td>скопился</td>
+			<td>конечно в глаголах</td>
+			<td>и прилагательных</td>
+		</tr>
+		<tr>
+			<td>но и среди</td>
+			<td>существительных</td>
+		<td>сотни и сотни лишних</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3">Большой брат следит за тобой</td>
+		</tr>
+	</tfoot>
+</table>
+
+<br><br>
+
+      <table id="empty">
+		<caption><strong>Empty table</strong></caption>
+            <tr>
+                <td rowspan="2" style="background-color:green;">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td colspan="2" style="background-color:red;">7</td>
+            </tr>
+        </table>
+
+</body>
+</html>

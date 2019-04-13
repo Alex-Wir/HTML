@@ -1,25 +1,51 @@
-<html>
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Aside</title>
+	<title>Nav</title>
 	<style>
-		body	{margin: 0 15%;}
-		aside	{color:#FF0000;
-				float:right;
-				width:200px;
-				margin: 10;}
+		body		{margin: 0 15%;}
 	</style>
-<head>
+</head>
 <body>
-	<aside>
-		<h2>Aside Ipsum 5X</h2>
-		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<div><a href="buy/id=3">Buy Ipsum Lorem 5X</a></div>
-		</p>
-	</aside>	
+	<nav>
+		<ul>
+			<li><a href="/">Main</a> </li>
+			<li><a href="/blog">Blog</a> </li>
+			<li><a href="/contacts">Contacts</a> </li>
+		</ul>
+	</nav>
 	<article>
-		<h2>Lorem ipsum</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<header>
+			<h2 id="top">Story in 2 parts</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#part1">Part 1</a></li>
+				<li><a href="#part2">Part 2</a></li>
+			</ul>
+		</nav>
+		<div>
+			<section id="part1">
+				<h4>Lorem Ipsum</h4>
+				<a href="#top">↑</a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</section>
+			<section id="part2">
+				<h4>Simply dummy text</h4>
+				<a href="#top">↑</a>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</section>
+		</div>
 	</article>
+	<footer>
+		<p>
+			<a href="/about">About</a> |
+			<a href="/license">License</a> |
+			<a href="/donation">Donation</a>
+		</p>
+		<p>
+			<small>(c) 1984 Corp, 2019</small>
+		</p>
+	</footer>
 </body>
 </html>
