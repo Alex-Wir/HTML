@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Псевдоклассы дочерних элементов ч.2</title>
+		<style>
+			body{
+				margin: 0 15%;
+				}
+			#first tr:nth-child(odd){
+				background-color: #bbb;
+				}
+			tr:nth-child(even){
+				background-color: #fff;	
+				}
+			#second tr:nth-child(3n+2){
+				background-color: #bbb;}
+			td{width:80px;}
+			#third tr:nth-last-child(2n+1){
+				background-color: #eee;
+				}
+			#third tr:nth-last-child(2){
+				background-color: #bbb;
+				}
+			table:nth-of-type(2){
+				border: 1px solid black;
+				}
+			table{
+				padding: 5px;
+				}
+			table:hover{
+				border: 2px solid green;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="first">
+			<h2>tr:nth-child(odd)</h2>
+			<h2>tr:nth-child(even)</h2>
+			<table>
+				<caption><b>First table</b></caption>
+				<tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+				<tr><td>4444444</td><td>Apple</td><td>550</td></tr>
+				<tr><td>5555555</td><td>Sony</td><td>400</td></tr>
+				<tr><td>6666666</td><td>Huawei</td><td>600</td></tr>
+				<tr><td>7777777</td><td>Samsung</td><td>199</td></tr>
+			</table>
+			<br />
+			<table>
+				<caption><b>Second table (table:nth-of-type(2))</b></caption>
+				<tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+			</table>
+		</div>
+		<hr />
+		<h2>tr:nth-child(3n+2)</h2>
+		<div id="second">
+			<table>
+				<caption><b></b></caption>
+				<tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+				<tr><td>4444444</td><td>Apple</td><td>550</td></tr>
+				<tr><td>5555555</td><td>Sony</td><td>400</td></tr>
+				<tr><td>6666666</td><td>Huawei</td><td>600</td></tr>
+				<tr><td>7777777</td><td>Samsung</td><td>199</td></tr>
+				<tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+				<tr><td>4444444</td><td>Apple</td><td>550</td></tr>
+				<tr><td>5555555</td><td>Sony</td><td>400</td></tr>
+				<tr><td>6666666</td><td>Huawei</td><td>600</td></tr>
+				<tr><td>7777777</td><td>Samsung</td><td>199</td></tr>
+			</table>
+		</div>
+		<hr />
+		<div id="third">
+			<h2>tr:nth-last-child(2)</h2>
+			<h2>tr:nth-last-child(2n+1)</h2>
+			<table><tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+				<tr><td>4444444</td><td>Apple</td><td>550</td></tr>
+				<tr><td>5555555</td><td>Sony</td><td>400</td></tr>
+				<tr><td>6666666</td><td>Huawei</td><td>600</td></tr>
+				<tr><td>7777777</td><td>Samsung</td><td>199</td></tr>
+				<tr><td>1111111</td><td>Asus</td><td>900</td></tr>
+				<tr><td>2222222</td><td>LG</td><td>750</td></tr>
+				<tr><td>3333333</td><td>Nokia</td><td>399</td></tr>
+				<tr><td>4444444</td><td>Apple</td><td>550</td></tr>
+				<tr><td>5555555</td><td>Sony</td><td>400</td></tr>
+				<tr><td>6666666</td><td>Huawei</td><td>600</td></tr>
+				<tr><td>7777777</td><td>Samsung</td><td>199</td></tr>
+			</table>
+		</div>
+	
+	</body>	
+</html>

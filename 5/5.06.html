@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Псевдоклассы дочерних элементов</title>
+		<style>
+			body{
+				margin:0 15%;
+				}
+			div, article{
+				border:1px solid silver;
+				}
+			div a:first-child{
+				color:red;
+				}
+			article a:last-child{
+				color:blue;
+				}
+			p:only-child{
+				color:red;
+				}
+			section span:only-of-type{
+                color: green;   /* зеленый цвет */
+				}
+			section p:only-of-type{
+                color: red; /* красный цвет */
+				}
+			section div:only-of-type{
+                color: blue;    /* синий цвет */
+				}
+		</style>
+	</head>
+	<body>
+		<h2>a:first-child</h2>
+		<div>
+			<a>a - first child</a><br />
+			<a>2</a><br />
+			<a>3</a>
+		</div>
+		<div>
+			<p>p - first child</p>
+			<a>2</a><br />
+			<a>3</a><br />
+			<a>4</a>
+		</div>
+		<hr />
+		<h2>a:last-child</h2>
+		<article>
+			<a>1</a><br />
+			<a>2</a><br />
+			<a>a - last-child</a>	
+		</article>
+		<article>
+			<a>1</a><br />
+			<a>2</a><br />
+			<a>3</a>
+			<p>p - last child</p>
+		</article>
+		<hr />
+		<h2>p:only-child</h2>
+		<div>
+			<p>1 - only child</p>
+		</div>
+		<div>
+			<p>2 - only child</p>
+			<p>3</p>
+		</div>
+		<div>
+			<p>4 - only child</p>
+		</div>
+		<hr />
+		<h2>p&span - only child</h2>
+		<section>
+			<div>Header</div>
+			<p>Единственный параграф и <span>элемент спан</span></p>
+			<div>Footer</div>
+		</section>
+	</body>
+</html>
