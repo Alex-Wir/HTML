@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Псевдоклассы форм</title>
+		<style>
+			body{
+				font-family: sans-serif;
+				margin: 0 15%;
+				}
+			h2	{
+				background-color: silver;
+				}
+			.first :enabled{
+				border: 2px solid black;
+				color:red;
+				}
+			:checked+span{
+				color: red;
+				font-weight: bold;
+				}
+			.form3 :default{
+				border: 2px solid red;
+				}
+			.form4 :valid:not(button){
+				border: 2px solid green;
+				}
+			.form4 :invalid{
+				border: 2px solid red;
+				}
+		</style>
+	</head>
+	<body>
+		<h2>:enabled</h2>
+		<p class="first"><input type="text" value="Enabled" /></p>
+		<p class="first"><input type="text" disabled value="Disabled" /></p>
+		<hr />
+		<h2>:checked+span</h2>
+		<h4>Select:</h4>
+		<p>
+			<input type="checkbox" checked name="1984"><span>1984</span>
+		</p>
+		<p>
+			<input type="checkbox" name="freedom"><span>freedom</span>
+		</p>
+		<p>
+			<input type="checkbox" name="love"><span>love</span>
+		</p>
+		<h4>Kaos!</h4>
+			<p>
+				<input type="radio" name="kaos" value="11"><span>11</span>
+			</p>
+			<p>
+				<input type="radio" checked name="kaos" value="23"><span>23</span>
+			</p>
+		<hr />
+			<h2>:default</h2>
+			<form class="form3">
+				<input type="text" name="login">
+				<input type="submit" value="Submit">
+			</form>
+		<hr />
+		<h2>:valid :invalid</h2>
+		<form class="form4">
+			<input name="login" placeholder="Login required" required>
+			<input name="password" placeholder="Password required" required>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

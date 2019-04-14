@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Псевдоэлементы</title>
+		<style>
+			body{
+				font-family: sans-serif;
+				margin: 0 15%;
+				}
+			h2	{
+				background-color: silver;
+				}
+			.first_p::first-letter{
+				font-size:26px;
+				color: red;
+				}
+			.first_p::first-line{
+				font-size: 20px;
+				}
+			#before::before{
+				content:"Text before ";
+				font-weight:bold;
+				background-color:gray;
+				}
+			#after::after{
+				content:" Text after";
+				font-weight:bold;
+				background-color:gray;
+				}
+			#select::selection{
+				color:green;
+				background-color:black;
+				}
+		</style>
+	</head>
+	<body>
+		<h2>::first-letter ::first-line</h2>
+		<p class="first_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchang</p>
+		<p class="first_p">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h2>::before ::after</h2>
+		<p id="before">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p id="after">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h2>::selection</h2>
+		<h4>select a part of text</h4>
+		<p id="select">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</body>
+</html>
+		
+		
+		
