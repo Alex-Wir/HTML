@@ -6,22 +6,64 @@
 		<style>
 			body{
 				margin:20px 15%;
-				}
-			#p1{
-				font-family: Arial;
-				}
-			#p2{
-				font-family: "Times New Roman";
-				}
-			#p3{
-				font-family: Helvetica, Arial, sans-serif;
-				}
+				width:650px;}
+			div	{
+				width:300px;
+				border:2px solid black;
+				padding:5px;
+				margin:5px;}
+			#div1{
+				font-family: Arial;}
+			#div2{
+				font-family: "Times New Roman";}
+			#div3{
+				font-family: Helvetica, sans-serif;}
+			#div4{
+				font-family: Verdana;}
+			#div5{
+				font-family: Georgia;}
+			#div6{
+				font-family: Courier;}
+			.left{
+				float:left;}
+			.right{
+				float:right;}
+			h4	{
+				background-color:silver;}
 		</style>
 	</head>
 	<body>
-		<p id="p1">Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial</p>
-		<p id="p2">Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New RomanTimes New Roman </p>
-		<p id="p3">Helvetica, Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif</p>
-		<p id="p4"> </p>
+		<div id="div1" class="left">
+			<h4>Arial</h4>
+			<p>Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial Arial</p>
+		</div>
+		<div id="div2" class="right">
+			<h4>Times New Roman</h4>
+			<p>Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New Roman Times New RomanTimes New Roman </p>
+		</div>
+		<div id="div3" class="left">
+			<h4>Helvetica, sans-serif</h4>
+			<p>Helvetica, Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif</p>
+		</div>
+		<div id="div4" class="left">
+			<h4>Verdana</h4>
+			<p>Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana Verdana </p>
+		</div>
+		<div id="div5" class="right">
+			<h4>Georgia</h4>
+			<p>Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia Georgia </p>
+		</div>
+		<div id="div6" class="right">
+			<h4>Courier</h4>
+			<p>Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier Courier </p>
+		</div>
+		<div class="left">
+			<h4>font-weight:bold;</h4>
+			<p>Свойство <span style="font-weight:bold;">font-weight</span> задает толщину шрифта</p>
+		</div>
+		<div class="right">
+			<h4>font-style:italic;</h4>
+			<p>Свойство font-style позволяет выделить текст <span style="font-style:italic;">курсивом</span>. Для этого используется значение <span style="font-style:italic;">italic</span></p>
+		</div>
 	</body>
 </html>
