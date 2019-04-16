@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Внешние шрифты</title>
+		<style>
+			body{
+				margin:20px 15%;}
+			@font-face{
+				font-family: Roboto;
+				src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);}
+			@font-face {
+				font-family: FontAwesome;
+				src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.eot');
+				src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+					 url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.woff2') format('woff2'),
+					 url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.woff') format('woff'),
+					 url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.ttf') format('truetype'),
+					 url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.svg') format('svg');}
+			.roboto{
+				font-family: Roboto;}
+			#fontawesome{
+				font-family: FontAwesome;}
+		</style>
+	</head>
+	<body>
+		<p>default font</p>
+		<div class="roboto">
+			<h4 class="Roboto">Roboto</h4>
+			<p>В качестве альтернативы мы можем загрузить файл шрифта на локальный компьютер и уже оттуда подгружать его на веб-страницу.</p>
+		</div>
+		<p id="fontawesome"><b>FontAwesome не работает( </b><br />Как и в предыдущем случае свойства font-family и src задают название и путь к шрифту. Но теперь также для совместимости добавляется еще одно свойство src. Второе свойство src устанавливает сразу несколько шрифтов.</p>
+	
+	</body>
+</html>
