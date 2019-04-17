@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форматирование текста</title>
+        <style>
+			body{margin: 20px 15%;}
+			h4{background-color: silver;}
+            p.lowercase {text-transform: lowercase;}
+            p.uppercase {text-transform: uppercase;}
+            p.capitalize { text-transform: capitalize;}
+			p.under{text-decoration: underline;}
+			p.over {text-decoration: overline;}
+			p.line {text-decoration: line-through;}
+			p.mixed {text-decoration: underline line-through;}
+			a.none{text-decoration:none;}
+			p.bigletterspacing{letter-spacing: 1px;}
+			p.smallletterspacing{letter-spacing: -1px;}
+			p.bigwordspacing{word-spacing: 6px;}
+			p.smallwordspacing{word-spacing: -2px;}
+			p.shadow1{text-shadow:5px 4px 3px #999;}
+			p.shadow2{text-shadow:-5px -4px 3px red;}
+        </style>
+    </head>
+    <body>
+    <div>
+		<h4>text-transform</h4>
+        <p class="capitalize">Текст использует значение capitalize</p>
+        <p class="lowercase">Текст использует значение lowercase</p>
+        <p class="uppercase">Текст использует значение uppercase</p>
+		<h4>text-decoration</h4>
+		<p class="under">Это подчеркнутый текст.</p>
+        <p class="over">Это надчеркнутый текст</p>
+        <p class="line">Это зачеркнутый текст</p>
+        <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
+        <p>Не подчеркнутая <a href="index.php" class="none">ссылка<a></p>
+		<h4>letter-spacing</h4>
+		<p class="bigletterspacing">This is big letter spacing</p>
+		<p class="smallletterspacing">This is small letter spacing</p>
+		<h4>word-spacing</h4>
+		<p class="bigwordspacing">This is big word spacing</p>
+		<p class="smallwordspacing">This is small word spacing</p>
+		<h4>text-shadow</h4>
+		<p class="shadow1">Text shadow type 1</p>
+		<p class="shadow2">Text shadow type 2</p>
+    </div>
+    </body>
+</html>
