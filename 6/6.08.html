@@ -5,20 +5,39 @@
         <title>Стилизация абзацев</title>
         <style>
 			body{margin: 20px 15%;}
-			h4{background-color: silver;}
-			div{width:150px;
+			h4{background-color: #eca1a6;}
+			div:not(.line){width:150px;
+				height:130px;
 				border:2px solid black;
 				padding:5px;
-				margin:2px;
+				margin:5px;
+				font-size:14px;
+				background-color: #bdcebe;
+				}
+			div:hover:not(.line){
+				font-size:16px;
+				padding:2px;
+				background-color: #d6cbd3;
 				}
 			div:not(.line){
 				display:inline-block;}
 			#square{list-style-type:square;}
 			#disc{list-style-type:disc;}
 			#circle{list-style-type:circle;}
-			.line{width:515px;
-				height:150px;
-				border:solid green;}
+			#decimal, .decimal{list-style-type:decimal;}
+			#decimal-leading-zero{list-style-type:decimal-leading-zero;}
+			#lower-roman{list-style-type:lower-roman;}
+			#upper-roman{list-style-type:upper-roman;}
+			#lower-alpha{list-style-type:lower-alpha;}
+			#upper-alpha{list-style-type:upper-alpha;}
+			#none{list-style-type:none;}
+			#outside{list-style-position:outside;}
+			#inside{list-style-position:inside;}
+			#image{list-style-image: url(../chaos.JPG);}
+			.line{width:530px;
+				height:160px;
+				border:solid green;
+				margin:2px;}
 		</style>
 	</head>
 	<body>
@@ -48,6 +67,84 @@
 				</ul>
 			</div>
 		</div>
+		<div class="line">
+			<div>
+				<h4>decimal</h4>
+				<ol id="decimal">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+			<div>
+				<h4>decimal-leading-zero</h4>
+				<ol id="decimal-leading-zero">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+			<div>
+				<h4>lower-roman</h4>
+				<ol id="lower-roman">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+		</div>
+		<div class="line">
+			<div>
+				<h4>upper-roman</h4>
+				<ol id="upper-roman">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+				<div>
+				<h4>lower-alpha</h4>
+				<ol id="lower-alpha">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+				<div>
+				<h4>upper-alpha</h4>
+				<ol id="upper-alpha">
+					<li>Elem 1</li>
+					<li>Elem 2</li>
+					<li>Elem 3</li>
+				</ol>
+			</div>
+		</div>
+		<div>
+			<h4>upper-alpha, decimal, none</h4>
+			<ol id="upper-alpha">
+				<li>Elem 1</li>
+				<li id="none">Elem 2</li>
+				<li class="decimal"	>Elem 3</li>
+			</ol>			
+		</div>
+		<h4>list-style-position:outside</h4>
+		<ul id="outside">
+			<li>Когда-то Эльдар Рязанов снял крутое кино «Служебный роман», но про секс там не говорилось. Так что о нем поговорим мы. Психолог Вероника Серёгина любезно ответила на самые распространенные вопросы. Мы послушали, переложили это на язык попроще и записали.</li>
+			<li>Когда-то Эльдар Рязанов снял крутое кино «Служебный роман», но про секс там не говорилось. Так что о нем поговорим мы. Психолог Вероника Серёгина любезно ответила на самые распространенные вопросы. Мы послушали, переложили это на язык попроще и записали.</li>
+		</ul>
+		<h4>list-style-position:inside</h4>
+		<ul id="inside">
+			<li>Когда-то Эльдар Рязанов снял крутое кино «Служебный роман», но про секс там не говорилось. Так что о нем поговорим мы. Психолог Вероника Серёгина любезно ответила на самые распространенные вопросы. Мы послушали, переложили это на язык попроще и записали. </li>
+			<li>Когда-то Эльдар Рязанов снял крутое кино «Служебный роман», но про секс там не говорилось. Так что о нем поговорим мы. Психолог Вероника Серёгина любезно ответила на самые распространенные вопросы. Мы послушали, переложили это на язык попроще и записали.</li>
+		</ul>
+		<h4>list-style-image:url(../chaos.JPG)</h4>
+		<ul id="image">
+			<li>Khorne</li>
+			<li>Nurgle</li>
+			<li>Tzeentch</li>
+			<li>Slaanesh</li>
+		</ul>
+
 		
 	</body>
 </html>

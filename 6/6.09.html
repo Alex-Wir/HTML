@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Стилизаци таблиц в CSS3</title>
+        <style>
+		body{
+			margin: 20px 15%;}
+		h4{
+			background-color: silver;}
+        table {
+            border: 1px solid #ccc;
+            border-spacing: 3px;}
+        td, th{
+            border: solid 1px #ccc;}
+        .collapsed{
+            border-collapse: collapse;}
+        .separated{
+            border-collapse: separate;}
+		.hidden{
+			empty-cells: hide;}
+		.bottom{
+			caption-side: bottom;}
+		caption{
+			font-weight: bold;}
+		.fixed{
+			width:350px;
+			table-layout:fixed;}
+        </style>
+    </head>
+    <body>
+        <h4>border-collapse: collapse</h4>
+        <table class="collapsed">
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>Lumia 950</td><td>Microsoft</td><td>29900</td></tr>
+            <tr><td>iPhone 6S</td><td>Apple</td><td>52900</td></tr>
+            <tr><td>Nexus 6P</td><td>Huawei</td><td>49000</td></tr>
+        </table>
+        <h4>border-collapse: separate</h4>
+        <table class="separated">
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td>HTC</td><td>49900</td></tr>
+            <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+        </table>
+		<h4>empty-cells: hide</h4>
+		<table class="hidden">
+			<tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td></td><td></td></tr>
+            <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+		</table>
+		<h4>caption-side: bottom</h4>
+		<table class="bottom">
+			<caption>Смартфоны 2047</caption>
+			<tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td>HTC</td><td>49900</td></tr>
+            <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+		</table>
+		<h4>table-layout:fixed, width:350px</h4>
+		<table class="fixed">
+			<tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td>HTC</td><td>49900</td></tr>
+            <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+		</table>
+    </body>
+</html>
