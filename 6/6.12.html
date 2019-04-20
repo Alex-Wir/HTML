@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Border</title>
+        <style>
+			body{
+				margin: 20px 15%;}
+			h4{
+				background-color: silver;}
+			div{
+				border:3px red; /*thin (тонкая граница - 1px), medium (средняя по ширине - 3px), thick (толстая - 5px)*/
+				width:60px;
+				height:60px;
+				padding:10px;
+				text-align:center;
+				display:inline-block;
+				margin:5px;
+				background-color: #f7e3df;
+				}
+			.solid{
+				border-style:solid;}
+			.dashed{
+				border-style:dashed;}
+			.dotted{
+				border-style:dotted;}
+			.double{
+				border-style:double;}
+			.groove{
+				border-style:groove;}
+			.ridge{
+				border-style:ridge;}
+			.inset{
+				border-style:inset;}
+			.outset{
+				border-style:outset;}
+			.none{
+				border-style:none;
+				margin:8px;}
+			.top{
+				border-style:solid;
+				border-top:dotted green;
+				}
+			.border-bottom-style{
+				border-style:solid;
+				border-bottom-style:dashed;}
+			.small{
+				font-size:xx-small;
+				}
+			.border-radius{
+				border:solid red;
+				border-radius:20px;}
+			.border-radius2{
+				border:solid red;
+				border-radius: 15px 30px 5px 40px;}
+			.border-radius3{
+				border: solid red;
+				border-top-right-radius:15px;
+				border-top-left-radius:5px;
+				border-bottom-right-radius:20px;
+				border-bottom-left-radius:50px;}
+			.border-radius4{
+				border: solid red;
+				border-radius: 20px/40px;}
+			.border-radius5{
+				border: solid red;
+				border-radius: 40px/20px;}
+		</style>
+	</head>
+	<body>
+		<h4>border-style:solid</h4>
+		<div class="none">none</div>
+		<div class="solid">solid</div>
+		<div class="dashed">dashed</div>
+		<div class="dotted">dotted</div>
+		<div class="double">double</div>
+		<div class="groove">groove</div>
+		<div class="ridge">ridge</div>
+		<div class="inset">inset</div>
+		<div class="outset">outset</div>
+		<h4>border-top, border-bottom-style</h4>
+		<div class="border-bottom-style">border-bottom-style</div>
+		<div class="top">border-top<span class="small"> этовышемоего понимания 20.04.2019</span></div>
+		<h4>border-radius</h4>
+		<div class="border-radius">20px</div>
+		<div class="border-radius2">15px 30px 5px 40px</div>
+		<div class="border-radius3"></div>
+		<div class="border-radius4">20px/40px</div>
+		<div class="border-radius5">40px/20px</div>
+	</body>
+</html>
