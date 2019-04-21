@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Размеры элементов</title>
+        <style>
+			body{
+				margin:20px 15%;}
+			div.outer{
+				width: 75%;
+				height: 200px;
+				margin: 10px;
+				border: 1px solid #ccc;
+				background-color: #eee;}
+			div.inner{
+				width: 80%;
+				height: 80%;
+				margin: auto;
+				border: 1px solid red;
+				background-color: blue;}
+			.size{
+				width: 200px;
+				height: 100px;
+				margin: 10px;
+				padding: 10px;
+				border: 5px solid #ccc;
+				background-color: #eee;}
+			.min-max{
+				border: 2px solid silver;
+				min-width:200px;
+				max-width:300px;
+				width:50%;}
+			.box-sizing{
+				width:200px;
+				height:100px;
+				margin:10px;
+				padding:10px;
+				border: 5px solid black;
+				background-color: gray;}
+			.outer1{
+				box-sizing: content-box;}
+			.outer2{
+				box-sizing: border-box;}
+			.outer3{
+				box-sizing: padding-box;}
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+			width: 75%;
+				height: 200px;
+				margin: 10px;
+            <div class="inner">
+				width: 80%;
+				height: 80%;
+				margin: auto;
+			</div>
+        </div>
+		<div class="size">Определение фактического размера в CSS 3
+			width: 200px;
+				height: 100px;
+				margin: 10px;
+				padding: 10px;
+		</div>
+		<div class="min-max">min-width:200px;
+				max-width:300px;</div>
+		<div class="box-sizing outer1">box-sizing: content-box</div>
+		<div class="box-sizing outer2">box-sizing: border-box</div>
+		<div class="box-sizing outer3">box-sizing: padding box
+			большинство современных браузеров не поддерживают данное свойство
+		</div>
+    </body>
+</html>
