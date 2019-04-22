@@ -6,10 +6,13 @@
         <style>
 			body{
 				margin:20px 15%;}
+			h4{
+				background-color: silver;
+				width: 700px;}
 			div{
 				width:200px;
 				height:150px;
-				margin:10px;
+				margin:10px 20px;
 				border:2px solid black;}
 			.colored{
 				background-color: gray;}
@@ -31,16 +34,39 @@
 				background-size:contain;}
 			.cover{
 				background-size:cover;}
+			.pr100{
+				background-size:100% 100%;}
+			.px{
+				background-size:200px 100px;}
+			.px_auto{
+				background-size:100px auto;}
+			.repeat_no{
+				background-repeat:no-repeat;}
+			.bp20_20{
+				background-position:20px 20px;}
+			.bp_bottom_right{
+				background-position:bottom right;}
+			.bp_center{
+				background-position: center;}
 		</style>
 	</head>
 	<body>
 		<div class="colored">background-color: gray;</div>
 		<div class="imaged">background-image: url(../tyan.png);</div>
+		<h4>background-repeat</h4>
 		<div class="imaged big space">background-repeat:space;</div>
 		<div class="imaged big round">background-repeat:round;</div>
 		<div class="imaged big repeat-x">background-repeat:repeat-x;</div>
 		<div class="imaged big repeat-y">background-repeat:repeat-y;</div>
+		<h4>background-size</h4>
 		<div class="imaged big contain">background-size:contain;</div>
 		<div class="imaged big cover">backgorund-size:cover;</div>
+		<div class="imaged big pr100">background-size:100% 100%;</div>
+		<div class="imaged big px">background-size:200px 100px;</div>
+		<div class="imaged big px_auto">background-size:100px auto;</div>
+		<h4>background-position</h4>
+		<div class="imaged big bp20_20 repeat_no">background-position:20px 20px;</div>
+		<div class="imaged big bp_bottom_right repeat_no">background-position:bottom right;</div>
+		<div class="imaged big bp_center repeat_no">background-position:center;</div>
 	</body>
 </html>
