@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Фон элемента ч.2</title>
+		<style>
+			body{
+				margin:20px 15%;}
+			h4{
+				background-color:silver;}
+			div{
+				margin:10px;
+				padding:5px;
+				border: 2px solid black;
+				width:300px;
+				height:250px;}
+			.image{
+				background-image: url(../tyan.png);}
+			.scroll{
+				overflow:scroll;}
+			.ba_scroll{
+				background-attachment:scroll;}
+			.ba_local{
+				background-attachment:local;}
+			.bo_div{
+				border:15px solid rgba(23,23,23,0.2);
+				padding:20px;
+				background-size:cover;
+				background-repeat:no-repeat;
+				display:inline-block;}
+			.bo_border_box{
+				background-origin:border-box;}
+			.bo_padding_box{
+				background-origin:padding-box;}
+			.bo_content_box{
+				background-origin:content-box;}
+			.bc_border_box{
+				background-clip:border-box;}
+			.bc_padding_box{
+				background-clip:padding-box;}
+			.bc_content_box{
+				background-clip:content-box;}
+			.bg{
+				background: #eee center no-repeat border-box local url(../tyan.png);}
+		</style>
+	</head>
+	<body>
+		<h4>background-attachment</h4>
+		<div class="image scroll ba_scroll">
+			<h4>scroll</h4>
+			The World Eaters are one of the Traitor Legions of Chaos Space Marines who now inhabit the Warp rift known as the Eye of Terror in the Imperium of Man's Segmentum Obscurus. The World Eaters, originally known as the War Hounds, were also once the XIIth Legion of the twenty First Founding Space Marine Legions, and one of the first to betray the Emperor of Mankind for the service of Chaos and the Warmaster Horus.
+
+			This Legion was a collection of nearly inhuman monsters long before Horus became corrupted and monsters they would remain, only with what little remained of their restraint and their humanity stripped away after their fall to Chaos. The World Eaters are now the dedicated servants of the Blood God Khorne, the Chaos God of War and Murder, and live for nothing more than to spill blood in his name. The World Eaters' Primarch, Angron, was one of the first of the Space Marine Primarchs to join with Horus when he turned against the Emperor and began the Horus Heresy. 	
+		</div>
+		<div class="image scroll ba_local">
+			<h4>local</h4>
+			The World Eaters are one of the Traitor Legions of Chaos Space Marines who now inhabit the Warp rift known as the Eye of Terror in the Imperium of Man's Segmentum Obscurus. The World Eaters, originally known as the War Hounds, were also once the XIIth Legion of the twenty First Founding Space Marine Legions, and one of the first to betray the Emperor of Mankind for the service of Chaos and the Warmaster Horus.
+
+			This Legion was a collection of nearly inhuman monsters long before Horus became corrupted and monsters they would remain, only with what little remained of their restraint and their humanity stripped away after their fall to Chaos. The World Eaters are now the dedicated servants of the Blood God Khorne, the Chaos God of War and Murder, and live for nothing more than to spill blood in his name. The World Eaters' Primarch, Angron, was one of the first of the Space Marine Primarchs to join with Horus when he turned against the Emperor and began the Horus Heresy. 	
+		</div>
+		<h4>background-origin</h4>
+		<div class="image bo_div bo_border_box">background-origin:border-box;</div>
+		<div class="image bo_div bo_padding_box">background-origin:padding-box;</div>
+		<div class="image bo_div bo_content_box">background-origin:content-box;</div>
+		<h4>background-clip</h4>
+		<div class="image bo_div bc_border_box">background-clip:border-box;</div>
+		<div class="image bo_div bc_padding_box">background-clip:padding-box;</div>
+		<div class="image bo_div bc_content_box">background-clip:content-box;</div>
+		<h4>background</h4>
+		<div class="bg">background: #eee center no-repeat border-box local url(../tyan.png);</div>
+		
+	
+	</body>
+</html>
