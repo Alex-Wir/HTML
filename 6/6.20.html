@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Линейный градиент</title>
+		<style>
+			body{
+				margin:20px 15%;}
+			h4{
+				background-color:silver;
+				padding-left:3px;}
+			div{
+				width:200px;
+				height:100px;
+				margin:10px;
+				padding:5px;
+				border:2px solid black;
+				color:white;}
+			.gr_left{
+				background-image:linear-gradient(left,black,white);
+				background-image:-moz-linear-gradient(left,black,white);
+				background-image:-o-linaer-gradient(left,black,white);
+				background-image:-webkit-linear-gradient(left,black,white);
+				padding-right:30px;}
+			.gr_right{
+				background-image:-moz-linear-gradient(right,black,white);
+				padding-left:30px;}
+			.gr_top_left{
+				background-image:-moz-linear-gradient(top left,black,darkkhaki,white);
+				padding:15px;}
+			.gr_30deg{
+				background-image:-moz-linear-gradient(30deg,black,white);
+				padding:15px;}
+			.gr{
+				background-image:-moz-linear-gradient(left, #ccc, red 20%, red 80%, #ccc);
+				padding:15px;}
+			.repeating_gr{
+				background-image:-moz-repeating-linear-gradient(left,#ccc 50px, red 70px, rgba(0, 0, 126,.5) 120px, #ccc 150px);
+				width:900px;}
+			button{
+				background:-moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+				border:1px solid #333;
+				border-radius:20px;
+				padding:10px 20px;
+				color:#fff;}
+		</style>
+	</head>
+	<body>
+		<h4>linear-gradient</h4>
+		<div class="gr_left">background-image:-moz-linear-gradient(left,black,white);</div>
+		<div class="gr_right">background-image:-moz-linear-gradient(right,black,white);</div>
+		<div class="gr_top_left">background-image:-moz-linear-gradient(top left,black,darkkhaki,white);</div>
+		<div class="gr_30deg">background-image:-moz-linear-gradient(30deg,black,white);</div>
+		<div class="gr">background-image:-moz-linear-gradient(left, #ccc, red 20%, red 80%, #ccc);</div>
+		<h4>repeating-linear-gradient</h4>
+		<div class="repeating_gr">
+			background-image:-moz-repeating-linear-gradient(left,#ccc 50px, red 70px, rgba(0, 0, 126,.5) 120px, #ccc 150px);
+		</div>
+		<h4>button</h4>
+		<button class="gr_button">Touch me</button>
+	</body>
+</html>
