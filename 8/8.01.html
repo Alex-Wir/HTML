@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Трансформации</title>
+		<style>
+			body{
+				margin:20px 15%;}
+			*{
+				box-sizing: border-box;}
+			h4{
+				background-color:gray;
+				color:white;
+				padding-left:20px;}
+			div{
+				display:inline-block;
+				width:200px;
+				height:200px;
+				background-color:silver;
+				border:1px solid black;
+				margin:10px;
+				padding:10px 30px;
+				}
+			.rotated{
+				transform:rotate(30deg);
+				vertical-align:top;}
+			.halfScale{
+				transform:scale(0.5);
+				vertical-align:top;}
+			.doubleScale{
+				transform:scale(2);
+				vertical-align:middle;}
+			.scale_2_5{
+				transform:scale(2, 0.5);}
+			.scaleX{
+				transform:scaleX(-1);}
+			.scaleY{
+				transform:scaleY(-1);}
+			.translate{
+				transform:translate(50px, 20px);
+				vertical-align:top;}
+			.translateX{
+				transform:translateX(-30px);
+				vertical-align:top;}
+			.translateY{
+				transform:translateY(30px);
+				vertical-align:top;}
+			.skew{
+				transform:skew(15deg,20deg);
+				vertical-align:top;
+				}
+			.alltransform{
+				transform: translate(50px, 100px) skew(30deg, 10deg) scale(1.5) rotate(90deg);
+				vertical-align:top;}
+				
+			.div_rotate45{
+				width:80px;
+				height:80px;
+				border-left:2px dashed red;
+				border-right:2px dotted green;
+				border-top:2px double blue;
+				transform:rotate(45deg);
+				vertical-align:top;}
+			.left_top{
+				transform-origin:left top;}
+			.left_bottom{
+				transform-origin:left bottom;}
+			.right_top{
+				transform-origin:right top;}
+			.right_bottom{
+				transform-origin:right bottom;}
+		</style>
+	</head>
+	<body>
+		<h4>transform:rotate(30deg);</h4>
+		<div></div>
+		<div class="rotated">transform:rotate(30deg);</div>
+		<div></div>
+		<h4>transform:scale();</h4>
+		<div></div>
+		<div class="doubleScale">transform:scale(2);</div>
+		<div></div>
+		<div class="halfScale">transform:scale(0.5);</div>
+		<div class="scale_2_5">transform:scale(2, 0.5);</div>
+		<h4>scaleX(); scaleY();</h4>
+		<div class="scaleX">transform:scaleX(-1);</div>
+		<div class="scaleY">transform:scaleY(-1);</div>
+		<h4>transform:translate();</h4>
+		<div></div>
+		<div class="translate">translate(50px, 20px)</div>
+		<div></div>
+		<div class="translateX">translateX(-30px)</div>
+		<div></div>
+		<div class="translateY">translateY(30px)</div>
+		<h4>transform:skew();</h4>
+		<div></div>
+		<div class="skew">transform:skew(15deg,20deg)</div>
+		<div></div>
+		<h4>all transform</h4>
+		<div></div>
+		<div class="alltransform">transform: translate(50px, 100px) skew(30deg, 10deg) scale(1.5) rotate(90deg)</div>
+		<div></div>
+		<h4>transform-origin</h4>
+		<div class="div_rotate45">none</div>
+		<div class="div_rotate45 left_top">transform-origin:left top</div>
+		<div class="div_rotate45 left_bottom">transform-origin:left bottom</div>
+		<div class="div_rotate45 right_top">transform-origin:right top</div>
+		<div class="div_rotate45 right_bottom">transform-origin:right bottom</div>
+		<br /><br /><br />
+		<div class="div_rotate45"></div>
+		<div class="div_rotate45"></div>
+		<div class="div_rotate45"></div>
+		<div class="div_rotate45"></div>
+		<div class="div_rotate45"></div>
+	</body>
+</html>
